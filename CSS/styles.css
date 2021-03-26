@@ -1,0 +1,1769 @@
+body {
+    font-family: 'Teko', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000000;
+    width: 100%;
+    background-image: url(../resources/images/other/background.jpg);
+    background-size: contain 1200px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+i {
+    color: #bfa317;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bfa317;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 1.6rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px white, -2px -2px white;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #bfa317;
+}
+
+.header h1 {
+    padding-top: 5px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3.2rem;
+}
+/* ------------------------------------------------ */
+/* NESTED BORDERS vvv */
+.outer-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    border: #bfa317 2px solid;
+    box-shadow: 2px 2px white, -2px -2px white;
+}
+
+.middle-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+    border: #9e8820 5px solid;
+    box-shadow: 2px 2px white, -2px -2px white;
+}
+
+.inner-border {
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #bfa317 3px solid;
+    box-shadow: 2px 2px white, -2px -2px white;
+}
+
+/* ------------------------------------------------ */
+/* NAV BAR  */
+.nav-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: -1px;
+    width: 110%;
+}
+
+/* ------------------------------------------------ */
+/* DROPDOWN MENU vvvv */
+.dropdown-menu {
+    background: rgb(255, 255, 255);
+    border-bottom: 2px #bfa317 solid;
+    border-left: 2px #bfa317 solid;
+    border-right: 2px #bfa317 solid;
+    text-align: center;
+    font-size: 1.3rem;
+    display: none;
+    position: absolute;
+    top: 45px; 
+    z-index: 20;
+  }
+
+.dropdown-menu i {
+    color: black;
+}
+
+x
+.dropdown-menu ul {
+    display: block;
+    list-style-type: disc;
+    margin: 0em;
+    padding: 0em;
+}
+
+.dropdown-menu li {
+    margin-top: 15px;
+}
+
+.dropdown-menu#music-1 {
+    left: 111px;
+    width: 95px;
+    height: 155px;
+}
+
+.dropdown-menu#film-2 {
+    left: 214px;
+    width: 95px;
+    height: 155px;
+}
+
+.dropdown-menu#games-3 {
+    left: 317px;
+    width: 95px;
+    height: 155px;
+}
+.menu-list-icon {
+    margin-top: 0;
+    margin-bottom: 5;
+}
+
+.menu-item-list a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+    color: black;
+}
+
+.menu-item-list {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.menu-item-list li {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-item-list a:hover {
+color: #bfa317;
+}
+/* ------------------------------------------------ */
+/* FOOTER vvvv */
+.footer-outer-border {
+    margin-top: 20px;
+}
+
+.footer-parent {
+    width: 100%;
+    margin: 10px 0 10px 0;
+
+}
+
+.footer-contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-contact-icons i {
+    color: #bfa317;
+}
+
+.footer-contact-icons i:hover{
+    color: black;
+    cursor: pointer;   
+}
+
+
+                                /* NEWS */
+
+.news-content {
+    margin: 5px;
+    padding: 5px;
+    border: #bfa317 1px solid;
+    font-size: 3rem;
+}
+
+
+
+
+/* ------------------------------------------------ */
+/* MOBILE LAYOUT vvvv */
+@media (max-width: 599px) {
+    .dropdown-menu {
+    display: none;
+    }
+
+    .show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+    }
+
+    .mobile-menu-close {
+    margin-left: 75px;
+    }
+
+    .mobile-menu-close i {
+    color: #818181;
+    }
+
+    .mobile-menu-close i:hover {
+    cursor: pointer;
+    color: #bfa317;
+    }
+    #mobile-menu-open {
+    margin-left: 10px;
+    }
+    #mobile-menu-open:hover {
+    color: black;
+    cursor: pointer;
+    }
+    .mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 1;
+    }
+      
+    .mobile-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'UnifrakturCook', cursive;
+    color:  #818181;
+    display: block;
+    transition: 0.3s;
+    background: black;
+    }
+    
+    .mobile-menu a:hover {
+    color: #f1f1f1;
+    }
+    
+    .mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+    
+    #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    }
+
+    .mobile-menu a:hover {
+    color: #bfa317;
+    cursor: pointer;
+    }
+    #mobile-menu-trigger:hover {
+    color: #bfa317;
+    cursor: pointer;
+    }
+
+    .desktop-navbar-buttons {
+        display: none;
+    }
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .right-content-outer-border {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        border: #bfa317 4px solid;
+    }
+
+    .right-content h1 {
+        font-family: 'UnifrakturCook', cursive;
+        font-size: 2.3rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .review-link button {
+        font-family: 'Teko', sans-serif;
+        width: 400px;
+        font-size: 2.5em;
+        color: black;
+        text-decoration: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .review-link button:hover {
+        color: #bfa317;
+        text-decoration: none;
+    }
+    .review-link {
+        height: auto;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        border: #bfa317 1px solid;
+    }
+
+    .mobile-menu-tigger {
+        padding: 5px;
+    }
+    .mobile-menu-tigger i:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .content-parent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px white, -2px -2px white;    
+    }
+
+    .left-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-content h1 {
+        text-align: center;
+        font-family: 'UnifrakturCook', cursive;
+        font-size: 2.3rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .left-content-inner-border {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 5px;
+        border: #bfa317 4px solid;
+    }
+    
+    .featured-album-thumbnail {
+        width: 240px;
+        height: 239px;
+    }
+
+    .featured-movie-thumbnail {
+        width: 240px;
+        height: 300px;
+    }
+
+    .featured-game-thumbnail {
+        width: 240px;
+        height: 300px;
+    }
+
+ /* ------------------------------------------------ */
+    /* MUSIC INDEX PAGE MOBILE*/
+    .music-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        font-size: 3.5rem;
+        font-family: 'UnifrakturCook', cursive;
+    }
+
+    .music-nav li {
+        list-style: none;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .music-nav a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .music-nav a:hover {
+        color: #bfa317;
+    }
+
+                /* ------------------------------------------------ */
+
+                .review-header li{
+                    text-align: center;
+                    font-size: 1rem;
+                    list-style: none;
+                }
+                
+                .review-header span {
+                    font-size: 3rem;
+                    font-family: 'UnifrakturCook', cursive;
+                }
+
+
+            /* REVIEW CONTENT MOBILE*/
+            .music-review-content {
+                background: rgba(255, 255, 255, 0.8);
+                margin: 1% auto;
+                padding: 5px;
+                border: 1px solid #888;
+                width: 85%;
+                border: #bfa317 6px solid;
+            }
+
+            .content-paragraph {
+                font-size: 1.5rem;
+                text-align: justify;
+                width: 100%;
+                height: 100%;
+                padding-right: 10px;
+            }
+
+            .music-review-content-inner-border {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: #bfa317 1px solid;
+                box-shadow: 2px 2px white, -2px -2px white;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+            .content-paragraph  a {
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+            }
+
+            .content-paragraph a:hover {
+                color: #bfa317;
+                cursor: pointer;
+            }
+
+            .feature-one-img {
+                width: 100%;
+                margin: 5px; 
+            }
+            
+            .feature-two-img {
+                width: 100%;
+                margin: 5px; 
+            }
+
+            .feature-one-promo {
+                    width: 100%;
+                    margin: 5px;
+                    float: right;
+                }
+
+            .feature-two-promo {
+                width: 100%;
+                margin: 5px; 
+            }
+
+            .video-1 {
+                margin: 5px; 
+                width: 100%;
+                height: 200px;
+            }
+
+            .video-2 {
+                margin: 5px; 
+                width: 330px;
+                height: 200px;
+            }
+
+            .video-3 {
+                margin: 5px; 
+                width: 330px;
+                height: 200px;
+            }
+
+            .album-image {
+                background-size: cover;
+                border: 2px black solid;
+                text-align: center;
+                cursor: pointer;
+                width: 190px;
+                height: 207px;
+                padding: 5px;
+            }
+            
+            .film-image {
+                background-size: cover;
+                border: 2px black solid;
+                text-align: center;
+                cursor: pointer;
+                width: 190px;
+                height: 315px;
+                padding: 5px;
+            }
+            
+            .game-image {
+                background-size: cover;
+                border: 2px black solid;
+                text-align: center;
+                cursor: pointer;
+                width: 190px;
+                height: 260px;
+                padding: 5px;
+            }
+
+            .image-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            /* MODAL MOBILE */
+    
+    .modal-open {
+        padding: 8px 16px;
+        color: white;
+        outline: none;
+        background-origin: none;
+    }
+    
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 2;
+        display: none;
+    }
+    
+    .modal-content {
+        border: #bfa317 3px solid;
+        background: #fff;
+        margin-top: 25px;
+        width: 80%;
+        height: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px 24px;
+        border-radius: 4px;
+        z-index: 5;
+    }
+    
+    .modal-header {
+        padding: 2px 0;
+    }
+
+    .modal-top-header {
+        font-size: 1.6rem;
+        text-align: left;
+        font-family: 'UnifrakturCook', cursive;
+    }
+    
+    .modal-bottom-header {
+        font-size: 1.2rem;
+        text-align: left;
+        font-family: 'Teko', sans-serif;
+    }
+    
+    
+    .modal-header .modal-close {
+        float: right;
+        font-size: 20px;
+        background: #efefef;
+        border: 0;
+        outline: 0;
+        padding: 5px 8px;
+        border-radius: 50%;
+    }
+    
+    .modal-body {
+        font-size: 1.6em;
+        overflow-y: scroll;
+        color: #7b7b7b;
+        padding: 15px 0;
+        height: 84%;
+        overflow-x: hidden;
+        text-align: left;
+    }
+    
+    .modal-body  span {
+        font-weight: bolder;
+        font-size: large;
+        color: #5e5c5c;
+        font-style: italic;
+    }
+    
+    .modal-footer {
+        padding: 15px 0;
+    }
+    
+    .icon i {
+        color: #bfa317;
+        cursor: pointer;
+    }
+    
+    .icon i:hover {
+        color: black;
+    }
+
+}
+/* ------------------------------------------------ */
+/* TABLET LAYOUT vvvv */
+@media (min-width: 600px) {
+    .show {
+        display: block;
+    }
+
+    .mobile-button-open {
+        display: none;
+    }
+
+    .mobile-button-close {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu i{
+        display: none;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+    
+    .desktop-navbar-buttons {
+        width: 80%;
+        font-size: 1.5rem;
+        font-family: 'UnifrakturCook', cursive;
+    }
+    .desktop-navbar-buttons ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+.button {
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.button:hover {
+    color: #bfa317;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover {
+    color: #bfa317;
+    cursor: pointer;
+}
+
+
+        .content-parent {
+            width: 100%;
+            display: block;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        
+        .right-content-outer-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding: 2px;
+            background: rgba(255, 255, 255, 0.2);
+            border: #bfa317 2px solid;
+            width: 100%;
+
+        }
+        .right-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 97%;
+    
+            text-align: center;
+            margin: 10px;
+        }
+        .right-content h1 {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 3rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .review-link button {
+            font-family: 'Teko', sans-serif;
+            font-size: 3rem;
+            color: black;
+            text-decoration: none;
+            border: none;
+            background: none;
+        }
+        .review-link button:hover {
+            color: #bfa317;
+            text-decoration: none;
+        }
+        .review-link {
+            height: auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            
+            border: #bfa317 4px solid;
+        }
+        .review-link a:hover {
+            cursor: pointer;
+        }
+
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+            margin: 10px;
+        }
+
+        .left-content h1 {
+            text-align: center;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 2.7rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .left-content-inner-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            padding: 5px;
+            border: #bfa317 4px solid;
+        }
+        
+        .featured-album-thumbnail {
+            width: 300px;
+            height: 299px;
+        }
+    
+        .featured-movie-thumbnail {
+            width: 300px;
+            height: 420px;
+        }
+    
+        .featured-game-thumbnail {
+            width: 300px;
+            height: 420px;
+        }
+    
+
+        /* ------------------------------------------------ */
+/* REVIEW CONTENT TABLET*/
+
+.album-image {
+    background-size: cover;
+    border: 2px black solid;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    height: 315px;
+    padding: 5px;
+}
+
+.film-image {
+    background-size: cover;
+    border: 2px black solid;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    height: 450px;
+    padding: 5px;
+}
+
+.game-image {
+    background-size: cover;
+    border: 2px black solid;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+    /* ------------------------------------------------ */
+    /* MUSIC INDEX PAGE TABLET*/
+    .music-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        font-size: 3.5rem;
+        font-family: 'UnifrakturCook', cursive;
+    }
+
+    .music-nav li {
+        list-style: none;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .music-nav a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .music-nav a:hover {
+        color: #bfa317;
+    }
+
+            /* ------------------------------------------------ */
+        /* MUSIC REVIEW CONTENT DESKTOP*/
+
+        .review-header li{
+            text-align: center;
+            font-size: 1rem;
+            list-style: none;
+        }
+
+        .review-header-ul {
+            padding-left: 0;
+        }
+        
+        .review-header span {
+            font-size: 4rem;
+            font-family: 'UnifrakturCook', cursive;
+        }
+
+        .music-review-content {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 1% auto;
+            padding: 5px;
+            border: 1px solid #888;
+            width: 85%;
+            border: #bfa317 6px solid;
+        }
+
+        .content-paragraph {
+            font-size: 1.5rem;
+            text-align: justify;
+            width: 100%;
+            height: 100%;
+            padding-right: 10px;
+        }
+
+        .music-review-content-inner-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: #bfa317 1px solid;
+            box-shadow: 2px 2px white, -2px -2px white;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .content-paragraph  a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .content-paragraph a:hover {
+            color: #bfa317;
+            cursor: pointer;
+        }
+
+        .feature-one-img {
+            width: 370px;
+            float: left;  
+            margin: 5px; 
+        }
+
+        .feature-two-img {
+            width: 370px;
+            float: right;  
+            margin: 5px; 
+        }
+
+        .feature-one-promo {
+                width: 400px;
+                float: right;  
+                margin: 5px;
+            }
+
+            .feature-two-promo {
+                width: 450px;
+                float: left;  
+                margin: 5px; 
+            }
+
+        .video-1 {
+            float: right;  
+            margin: 5px; 
+        }
+
+        .video-2 {
+            float: left;  
+            margin: 5px; 
+        }
+
+        .video-3 {
+            float: right;  
+            margin: 5px; 
+        }
+
+        /* MODAL TABLET */
+    
+    .modal-open {
+        padding: 8px 16px;
+        color: white;
+        outline: none;
+        background-origin: none;
+    }
+    
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 2;
+        display: none;
+    }
+    
+    .modal-content {
+        border: #bfa317 3px solid;
+        background: #fff;
+        margin-top: 25px;
+        width: 90%;
+        height: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px 24px;
+        border-radius: 4px;
+        z-index: 4;
+    }
+    
+    .modal-header {
+        padding: 2px 0;
+    }
+    .modal-top-header {
+        font-size: 2rem;
+        text-align: left;
+        font-family: 'UnifrakturCook', cursive;
+    }
+    
+    .modal-bottom-header {
+        font-size: 1.6rem;
+        text-align: left;
+        font-family: 'Teko', sans-serif;
+    }
+    
+    
+    .modal-header .modal-close {
+        float: right;
+        font-size: 20px;
+        background: #efefef;
+        border: 0;
+        outline: 0;
+        padding: 5px 8px;
+        border-radius: 50%;
+    }
+    
+    .modal-body {
+        font-size: 1.6em;
+        overflow-y: scroll;
+        color: #7b7b7b;
+        padding: 15px 0;
+        height: 80%;
+        text-align: left;
+    }
+    
+    .modal-body  span {
+        font-weight: bolder;
+        font-size: large;
+        color: #5e5c5c;
+        font-style: italic;
+    }
+    
+    .modal-footer {
+        padding: 15px 0;
+    }
+    
+    .icon i {
+        color: #bfa317;
+        cursor: pointer;
+    }
+    
+    .icon i:hover {
+        color: black;
+    }
+
+}
+/* ------------------------------------------------ */
+/* DESKTOP LAYOUT vvvv */
+@media (min-width: 980px) {
+    .show {
+        display: block;
+    }
+
+    .mobile-button-open {
+        display: none;
+    }
+    .mobile-button-close {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-menu i{
+        display: none;
+    }
+    .fa-bars {
+        display: none;
+    }
+    
+    .desktop-navbar-buttons {
+        width: 80%;
+        font-size: 1.5rem;
+        font-family: 'UnifrakturCook', cursive;
+    }
+    .desktop-navbar-buttons ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+.button {
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.button:hover {
+    color: #bfa317;
+    cursor: pointer;
+}
+
+        .content-parent {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        
+        .right-content-outer-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding: 2px;
+            background: rgba(255, 255, 255, 0.2);
+            border: #bfa317 2px solid;
+            width: 100%;
+
+        }
+        .right-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            text-align: center;
+            margin: 10px;
+        }
+        .right-content h1 {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 3rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .review-link button {
+            font-family: 'Teko', sans-serif;
+            font-size: 3rem;
+            color: black;
+            text-decoration: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .review-link button:hover {
+            color: #bfa317;
+            text-decoration: none;
+        }
+        .review-link {
+            height: auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border: #bfa317 4px solid;
+        }
+
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            text-align: center;
+            margin: 10px;
+        }
+        .left-content h1 {
+            text-align: center;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 3rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .left-content-inner-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            padding: 5px;
+            border: #bfa317 4px solid;
+        }
+
+        .featured-album-thumbnail {
+            width: 300px;
+            height: 299px;
+        }
+    
+        .featured-movie-thumbnail {
+            width: 300px;
+            height: 420px;
+        }
+    
+        .featured-game-thumbnail {
+            width: 300px;
+            height: 420px;
+        }
+
+        
+/* ------------------------------------------------ */
+/* REVIEW CONTENT DESKTOP */
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.album-image {
+    background-size: cover;
+    border: 2px black solid;
+    text-align: center;
+    cursor: pointer;
+    width: 230px;
+    height: 247px;
+}
+
+.film-image {
+    background-size: cover;
+    border: 2px black solid;
+    text-align: center;
+    cursor: pointer;
+    width: 230px;
+    height: 366px;
+}
+
+.game-image {
+    background-size: cover;
+    border: 2px black solid;
+    text-align: center;
+    cursor: pointer;
+    height: 320px;
+    width: 230px;
+}
+
+.review-header li{
+    text-align: center;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.review-header span {
+    font-size: 4rem;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+/* ------------------------------------------------ */
+        /* ------------------------------------------------ */
+        /* MUSIC REVIEW CONTENT DESKTOP*/
+        .music-review-content {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 1% auto;
+            padding: 5px;
+            border: 1px solid #888;
+            width: 85%;
+            border: #bfa317 6px solid;
+        }
+
+        .content-paragraph {
+            font-size: 1.5rem;
+            text-align: justify;
+            width: 100%;
+            height: 100%;
+            padding-right: 10px;
+        }
+
+        .music-review-content-inner-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: #bfa317 1px solid;
+            box-shadow: 2px 2px white, -2px -2px white;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .content-paragraph  a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .content-paragraph a:hover {
+            color: #bfa317;
+            cursor: pointer;
+        }
+
+        .feature-one-img {
+            width: 500px;
+            float: left;  
+            margin: 5px; 
+        }
+
+        .feature-two-img {
+            width: 500px;
+            float: right;  
+            margin: 5px; 
+        }
+
+
+        .feature-one-promo {
+                width: 500px;
+                float: right;  
+                margin: 5px;
+            }
+
+            .feature-two-promo {
+                width: 550px;
+                float: left;  
+                margin: 5px; 
+            }
+
+        .video-1 {
+            float: right;  
+            margin: 5px; 
+        }
+
+        .video-2 {
+            float: left;  
+            margin: 5px; 
+        }
+
+        .video-3 {
+            float: right;  
+            margin: 5px; 
+        }
+
+/* MODAL DESKTOP */
+    
+.modal-open {
+    padding: 8px 16px;
+    color: white;
+    outline: none;
+    background-origin: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+}
+
+.modal-content {
+    border: #bfa317 3px solid;
+    background: #fff;
+    margin-top: 25px;
+    width: 90%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 24px;
+    border-radius: 4px;
+    z-index: 4;
+}
+
+.modal-header {
+    padding: 2px 0;
+}
+
+.modal-top-header {
+    font-size: 3rem;
+    text-align: left;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+.modal-bottom-header {
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Teko', sans-serif;
+}
+
+.modal-header.modal-close {
+    float: right;
+    font-size: 20px;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px;
+    border-radius: 50%;
+}
+
+.modal-body {
+    font-size: 1.6em;
+    overflow-y: scroll;
+    color: #7b7b7b;
+    padding: 5px 0;
+    height: 80%;
+    text-align: left;
+}
+
+.modal-body  span {
+    font-weight: bolder;
+    font-size: large;
+    color: #5e5c5c;
+    font-style: italic;
+}
+
+.modal-footer {
+    padding: 15px 0;
+}
+
+.icon i {
+    color: #bfa317;
+    cursor: pointer;
+}
+
+.icon i:hover {
+    color: black;
+}
+
+}
+
+
+.featured {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    border: #bfa317 2px solid;
+}
+
+.featured-excerpt {
+    height: auto;
+    width: 50%;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------ */
+/* UNDER CONSTRUCTION PAGE */
+  .under-contruction {
+    font-size: 4rem;
+    font-family: 'UnifrakturCook', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .under-contruction img {
+      width: 200px;
+      padding: 10px;
+  }
+
+  .under-contruction h1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  @media (max-width: 730px) {
+    .under-contruction {
+        font-size: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .under-contruction img {
+          width: 150px;
+          padding: 5px;
+      }
+  }
+
+
+
+    /* ALBUM REVIEW CONTENT */
+
+    .album-img-1  {
+        background-image: url(../resources/images/music/b+w/babirusa-humanoid-b+w.jpg);
+        background-size: cover;
+        cursor: pointer;
+    }
+    .album-img-1:hover {
+        background-image: url(https://f4.bcbits.com/img/a2876979559_5.jpg);
+        cursor: pointer;
+    }
+    .album-img-2  {
+        background-image: url(../resources/images/music/b+w/inhibitor-abhorrence-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-2:hover {
+        background-image: url(https://f4.bcbits.com/img/a3320381888_10.jpg);
+    }
+    .album-img-3  {
+        background-image: url(../resources/images/music/b+w/make-them-suffer-how-to-survive-a-funeral-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-3:hover {
+        background-image: url(https://i0.wp.com/wallofsoundau.com/wp-content/uploads/2020/06/MTS-funeral.jpg?fit=1024%2C1024&ssl=1);
+        cursor: pointer;
+    }
+    .album-img-4  {
+        background-image: url(../resources/images/music/b+w/defeated-sanity-the-sanguinary-impetus-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-4:hover {
+        background-image: url(https://f4.bcbits.com/img/a1076321780_10.jpg);
+        cursor: pointer;
+    }
+    .album-img-5  {
+        background-image: url(../resources/images/music//b+w/bleed-from-within-fractrure-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-5:hover {
+        background-image: url(https://i1.wp.com/www.rocksins.com/wp-content/uploads/2020/05/Bleed-From-Within-Fracture-Album-Cover.jpg?fit=800%2C800&ssl=1);
+        cursor: pointer;
+    }
+    .album-img-6  {
+        background-image: url(../resources/images/music/b+w/within-destruction-yōkai-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-6:hover {
+        background-image: url(http://new-transcendence.com/wp-content/uploads/2020/06/Yokai.jpg);
+        cursor: pointer;
+    }
+    .album-img-7  {
+        background-image: url(../resources/images/music/b+w/nf-the-search-b+w.png);
+        background-size: cover;
+    }
+    .album-img-7:hover {
+        background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1b/NF_-_The_Search.png);
+        cursor: pointer;
+    }
+    .album-img-8  {
+        background-image: url(../resources/images/music/b+w/alpha-wolf-a-quiet-place-to-die-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-8:hover {
+        background-image: url(https://f4.bcbits.com/img/a3622023113_10.jpg);
+        cursor: pointer;
+    }
+    .album-img-9  {
+        background-image: url(../resources/images/music/b+w/logic-no-pressure-b+w.png);
+        background-size: cover;
+    }
+    .album-img-9:hover {
+        background-image: url(https://i.redd.it/osjj1swdiuc51.jpg);
+        cursor: pointer;
+    }
+    .album-img-10  {
+        background-image: url(../resources/images/music/b+w/bring-me-the-horizon-Post-Human-Survival-Horror-b+w.jpg);
+        background-size: cover;
+    }
+    .album-img-10:hover {
+        background-image: url(https://upload.wikimedia.org/wikipedia/en/0/0a/Bring_Me_the_Horizon_Post_Human_Survival_Horror_Cover_Art_2020.jpg);
+        cursor: pointer;
+    }
+
+    /* MOVIE REVIEW CONTENT */
+
+    .film-img-1  {
+        background-image: url(../resources/images/film/b+w/bill-and-ted-b+w.jpg);
+        background-size: cover;
+        cursor: pointer;
+    }
+    .film-img-1:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BOTRiNzFhNjAtNTdhMS00ZjViLWFhNTUtMWJlMTJkMGM1YzM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-2  {
+        background-image: url(../resources/images/film/b+w/guns-akimbo-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-2:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BNzU3ZTI1OTktNjVkNy00OWEzLWIyNzAtMWQ5YjRkZDU1ZjAxXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg);
+    }
+    .film-img-3  {
+        background-image: url(../resources/images/film/b+w/jojo-rabbit-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-3:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BZjU0Yzk2MzEtMjAzYy00MzY0LTg2YmItM2RkNzdkY2ZhN2JkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-4  {
+        background-image: url(../resources/images/film/b+w/joker-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-4:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-5  {
+        background-image: url(../resources/images/film/b+w/love-and-mosters-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-5:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BYWVkMWEyMDUtZTVmOC00MTYxLWE1ZTUtNjk4M2IzMjY2OTIxXkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_.jpgg);
+        cursor: pointer;
+    }
+    .film-img-6  {
+        background-image: url(../resources/images/film/b+w/soul-b+w.jpeg);
+        background-size: cover;
+    }
+    .film-img-6:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BMTg1MWM3NzgtZDkwMS00M2Y5LWIwY2UtNTMyYWJlZWU2ZmMwXkEyXkFqcGdeQXVyODQ4MjU1MDk@._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-7  {
+        background-image: url(../resources/images/film/b+w/spiderman-into-the-spider-verse-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-7:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BMjgzMDgxODAxNl5BMl5BanBnXkFtZTgwNzA4ODU0NjM@._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-8  {
+        background-image: url(../resources/images/film/b+w/the-hunt-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-8:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BZjg4ODIyM2QtOWZmNS00OGMzLWFmMzMtODM0MzRiM2JiNTgwXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-9  {
+        background-image: url(../resources/images/film/b+w/the-new-mutants-b+w.jpg);
+        background-size: cover;
+    }
+    .film-img-9:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BZDQ2NTdmNDgtMGIwMS00ODE2LTk5M2EtZGZhYzc4MWRlNTU3XkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_.jpg);
+        cursor: pointer;
+    }
+    .film-img-10  {
+        background-image: url(../resources/images/film/b+w/avengers-endgam-b+w.jpeg);
+        background-size: cover;
+    }
+    .film-img-10:hover {
+        background-image: url(https://thumbor.forbes.com/thumbor/711x1039/https://blogs-images.forbes.com/markhughes/files/2019/04/AVENGERS-ENDGAME-poster-DOLBY-CINEMA.jpg?width=960);
+        cursor: pointer;
+    }
+
+
+/* GAME REVIEW CONTENT */
+
+.game-img-1  {
+    background-image: url(../resources/images/games/b+w/assassins-creed-valhalla-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-1:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjY4MTNlNzItNmViNC00MDBiLTgwNzQtODI5OTZlOTQwM2QzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg);
+    cursor: pointer;
+}
+.game-img-2  {
+    background-image: url(../resources/images/games/b+w/call-of-duty-cold-war-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-2:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNThlNGM3ZmUtYjUyYy00ZTBhLWFmMTgtZmQyYmVkMmRlNjVlXkEyXkFqcGdeQXVyMTExNjQ2MTIw._V1_.jpg);
+}
+.game-img-3  {
+    background-image: url(../resources/images/games/b+w/cod-modern-warefare-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-3:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTc3NWY2ZTMtNTNlZC00MWM2LWI5MzYtMmU1YzY0ODk5ZjQ1XkEyXkFqcGdeQXVyODA2MTkwODk@._V1_.jpg);
+}
+.game-img-4  {
+    background-image: url(../resources/images/games/b+w/ghost-of-tsushima-b+w.jpg);
+    background-size: cover;
+}
+.game-img-4:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjEwYjRjZjctNWRmNy00NDA1LWE1MjYtYTlhMWIzZGNhMWYxXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg);
+}
+.game-img-5  {
+    background-image: url(../resources/images/games/b+w/grand-theft-auto-5-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-5:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZTI4YWM0YjItNTk4Mi00N2NkLTlkZjItOGIzNTdmZTQyOTk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg);
+}
+.game-img-6  {
+    background-image: url(../resources/images/games/b+w/hitman-3-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-6:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWIwZDQ4MGYtYmI1OS00MjMyLWE3MDItOWUxOTBlOTA5NDY0XkEyXkFqcGdeQXVyNzQzNDM3NTI@._V1_.jpg);
+    cursor: pointer;
+}
+.game-img-7  {
+    background-image: url(../resources/images/games/b+w/pubg-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-7:hover {
+    background-image: url(https://www.gamedealing.com/images/playerunknown_bg.jpg);
+}
+.game-img-8  {
+    background-image: url(../resources/images/games/b+w/red-dead-redemption-2-b+w.jpg);
+    background-size: cover;
+}
+.game-img-8:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMThiMGJkNDUtYjIxYy00ZTRhLWE5NmUtNzI4NTJlOGI4ZTMwXkEyXkFqcGdeQXVyNTk1ODMyNjA@._V1_.jpg);
+}
+.game-img-9  {
+    background-image: url(../resources/images/games/b+w/spider-man-miles-morales-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-9:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTFhNWU3MDQtYzJjZi00NjlkLTlkODMtNWRiOGY3OGMxNGQ4XkEyXkFqcGdeQXVyMzIwMjMyMzc@._V1_.jpg);
+    cursor: pointer;
+}
+.game-img-10  {
+    background-image: url(../resources/images/games/b+w/the-last-of-us-2-b+w.jpeg);
+    background-size: cover;
+}
+.game-img-10:hover {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BODUwNWY5YjctNDZkNy00ZTY1LWEzMzItZGVkYTllOWVjOTc3XkEyXkFqcGdeQXVyNjU4NTIxNzI@._V1_.jpg);
+}
+
+
+    /* HOME PAGE FEATURED CONTENT */
+    .featured-album-thumbnail  {
+        background-image: url(../resources/images/music/b+w/babirusa-humanoid-b+w.jpg);
+        background-size: cover;
+        margin: 5px;
+        border: 2px black solid;
+        text-align: center;
+        cursor: pointer;
+    }
+    .featured-album-thumbnail:hover {
+        background-image: url(https://f4.bcbits.com/img/a2876979559_5.jpg);
+        cursor: pointer;
+    }
+    .featured-movie-thumbnail {
+        background-image: url(../resources/images/film/b+w/bill-and-ted-b+w.jpg);
+        background-size: cover;
+        margin: 5px;
+        border: 2px black solid;
+        text-align: center;
+    }
+    .featured-movie-thumbnail:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BOTRiNzFhNjAtNTdhMS00ZjViLWFhNTUtMWJlMTJkMGM1YzM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg);
+        cursor: pointer;
+    }
+    .featured-game-thumbnail {
+        background-image: url(../resources/images/games/b+w/call-of-duty-cold-war-b+w.jpeg);
+        background-size: cover;
+        margin: 5px;
+        border: 2px black solid;
+        text-align: center;
+    }
+    .featured-game-thumbnail:hover {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BNThlNGM3ZmUtYjUyYy00ZTBhLWFmMTgtZmQyYmVkMmRlNjVlXkEyXkFqcGdeQXVyMTExNjQ2MTIw._V1_.jpg);
+        cursor: pointer;
+    }
