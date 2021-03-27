@@ -215,6 +215,17 @@ color: #bfa317;
 /* ------------------------------------------------ */
 /* MOBILE LAYOUT vvvv */
 @media (max-width: 599px) {
+
+    .featured {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border: #bfa317 2px solid;
+    }
+
     .dropdown-menu {
     display: none;
     }
@@ -370,8 +381,8 @@ color: #bfa317;
     }
 
     .left-content {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         width: 100%;
     }
 
@@ -392,18 +403,27 @@ color: #bfa317;
     }
     
     .featured-album-thumbnail {
-        width: 240px;
-        height: 239px;
+        width: 420px;
+        height: 435px;
     }
 
     .featured-movie-thumbnail {
-        width: 240px;
-        height: 300px;
+        width: 420px;
+        height: 500px;
     }
 
     .featured-game-thumbnail {
-        width: 240px;
-        height: 300px;
+        width: 420px;
+        height: 500px;
+    }
+
+    .featured-excerpt {
+        display: none;
+        height: auto;
+        width: 50%;
+        margin: 5px;
+        text-align: center;
+        font-size: 1.6rem;
     }
 
  /* ------------------------------------------------ */
@@ -413,7 +433,7 @@ color: #bfa317;
         flex-direction: column;
         justify-content: left;
         align-items: center;
-        font-size: 3.5rem;
+        font-size: 2rem;
         font-family: 'UnifrakturCook', cursive;
     }
 
@@ -556,7 +576,7 @@ color: #bfa317;
 
             .image-gallery {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
 
             /* MODAL MOBILE */
@@ -653,6 +673,17 @@ color: #bfa317;
 /* ------------------------------------------------ */
 /* TABLET LAYOUT vvvv */
 @media (min-width: 600px) {
+
+    .featured {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border: #bfa317 2px solid;
+    }
+
     .show {
         display: block;
     }
@@ -811,6 +842,14 @@ color: #bfa317;
             width: 300px;
             height: 420px;
         }
+
+        .featured-excerpt {
+            height: auto;
+            width: 50%;
+            margin: 5px;
+            text-align: center;
+            font-size: 1.6rem;
+        }
     
 
         /* ------------------------------------------------ */
@@ -859,7 +898,7 @@ color: #bfa317;
         flex-direction: column;
         justify-content: left;
         align-items: center;
-        font-size: 3.5rem;
+        font-size: 2rem;
         font-family: 'UnifrakturCook', cursive;
     }
 
@@ -1065,6 +1104,17 @@ color: #bfa317;
 /* ------------------------------------------------ */
 /* DESKTOP LAYOUT vvvv */
 @media (min-width: 980px) {
+
+    .featured {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border: #bfa317 2px solid;
+    }
+
     .show {
         display: block;
     }
@@ -1206,6 +1256,15 @@ color: #bfa317;
             width: 300px;
             height: 420px;
         }
+
+        .featured-excerpt {
+            height: auto;
+            width: 50%;
+            margin: 5px;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
 
         
 /* ------------------------------------------------ */
@@ -1426,23 +1485,9 @@ color: #bfa317;
 }
 
 
-.featured {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    border: #bfa317 2px solid;
-}
 
-.featured-excerpt {
-    height: auto;
-    width: 50%;
-    margin: 5px;
-    text-align: center;
-    font-size: 1.6rem;
-}
+
+
 
 
 
@@ -1766,4 +1811,10 @@ color: #bfa317;
     .featured-game-thumbnail:hover {
         background-image: url(https://m.media-amazon.com/images/M/MV5BNThlNGM3ZmUtYjUyYy00ZTBhLWFmMTgtZmQyYmVkMmRlNjVlXkEyXkFqcGdeQXVyMTExNjQ2MTIw._V1_.jpg);
         cursor: pointer;
+    }
+
+    .left-content li {
+        text-align: center;
+        font-size: 1rem;
+        list-style: none;
     }
