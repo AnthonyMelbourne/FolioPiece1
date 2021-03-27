@@ -403,18 +403,18 @@ color: #bfa317;
     }
     
     .featured-album-thumbnail {
-        width: 420px;
-        height: 435px;
+        width: 320px;
+        height: 320px;
     }
 
     .featured-movie-thumbnail {
-        width: 420px;
-        height: 500px;
+        width: 320px;
+        height: 420px;
     }
 
     .featured-game-thumbnail {
-        width: 420px;
-        height: 500px;
+        width: 320px;
+        height: 420px;
     }
 
     .featured-excerpt {
