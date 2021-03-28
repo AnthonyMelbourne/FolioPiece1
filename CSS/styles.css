@@ -549,9 +549,10 @@ color: #bfa317;
                 border: 2px black solid;
                 text-align: center;
                 cursor: pointer;
-                width: 190px;
-                height: 207px;
-                padding: 5px;
+                width: 320px;
+                height: 335px;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
             
             .film-image {
@@ -559,9 +560,10 @@ color: #bfa317;
                 border: 2px black solid;
                 text-align: center;
                 cursor: pointer;
-                width: 190px;
-                height: 315px;
-                padding: 5px;
+                width: 320px;
+                height: 520px;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
             
             .game-image {
@@ -569,9 +571,10 @@ color: #bfa317;
                 border: 2px black solid;
                 text-align: center;
                 cursor: pointer;
-                width: 190px;
-                height: 260px;
-                padding: 5px;
+                width: 320px;
+                height: 415px;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
 
             .image-gallery {
